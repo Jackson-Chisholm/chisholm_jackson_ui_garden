@@ -1,2 +1,2 @@
-export { TableCell } from "./TableCell";
-export type { TableCellProps } from "./TableRow.types";
+export { TableRow } from "./TableRow";
+export type { TableRowProps } from "./TableRow.types";
