@@ -1,5 +1,5 @@
 // Button.tsx
-import React from 'react';
+import React from "react";
 import { DropdownProps } from "./Dropdown.types";
 import styled from "styled-components";
 
@@ -30,12 +30,11 @@ const StyledDropdown = styled.select<StyledDropdownProps>`
   }
 `;
 
-
-export function Dropdown ({
+export function Dropdown({
   id,
   optionA,
   optionB,
-  variant = 'primary',
+  variant = "primary",
   backgroundColor = "#2563eb",
   disabled = false,
 }: DropdownProps) {

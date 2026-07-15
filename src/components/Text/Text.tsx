@@ -1,5 +1,5 @@
 // Button.tsx
-import React from 'react';
+import React from "react";
 import { TextProps } from "./Text.types";
 import styled from "styled-components";
 
@@ -30,10 +30,9 @@ const StyledText = styled.p<StyledTextProps>`
   }
 `;
 
-
-export function Text ({
+export function Text({
   label,
-  variant = 'primary',
+  variant = "primary",
   backgroundColor = "#2563eb",
   disabled = false,
 }: TextProps) {

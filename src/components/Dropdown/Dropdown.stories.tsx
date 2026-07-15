@@ -1,19 +1,19 @@
 // Button.stories.tsx
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
-import React from 'react';
-import { Dropdown } from './Dropdown'; // Import your actual Button component
+import type { Meta, StoryObj } from "@storybook/react-webpack5";
+import React from "react";
+import { Dropdown } from "./Dropdown"; // Import your actual Button component
 
 // Default export: metadata for Storybook
 const meta: Meta<typeof Dropdown> = {
-  title: 'Components/Dropdown', // Storybook sidebar category
+  title: "Components/Dropdown", // Storybook sidebar category
   component: Dropdown,
-  tags: ['autodocs'], // Enables auto-generated docs
+  tags: ["autodocs"], // Enables auto-generated docs
   argTypes: {
     variant: {
-      control: { type: 'select' },
-      options: ['primary', 'secondary', 'danger'],
+      control: { type: "select" },
+      options: ["primary", "secondary", "danger"],
     },
-    disabled: { control: 'boolean' },
+    disabled: { control: "boolean" },
   },
 };
 
@@ -25,10 +25,10 @@ type Story = StoryObj<typeof Dropdown>;
 // Default button
 export const Primary: Story = {
   args: {
-    id: 'Primary Text',
-    optionA: 'Primary A',
-    optionB: 'Primary B',
-    variant: 'primary',
+    id: "Primary Text",
+    optionA: "Primary A",
+    optionB: "Primary B",
+    variant: "primary",
     disabled: false,
   },
 };
@@ -36,10 +36,10 @@ export const Primary: Story = {
 // Secondary button
 export const Secondary: Story = {
   args: {
-    id: 'Secondary Text',
-    optionA: 'Second A',
-    optionB: 'Second B',
-    variant: 'secondary',
+    id: "Secondary Text",
+    optionA: "Second A",
+    optionB: "Second B",
+    variant: "secondary",
     disabled: false,
   },
 };
@@ -47,10 +47,10 @@ export const Secondary: Story = {
 // Disabled button
 export const Disabled: Story = {
   args: {
-    id: 'Disabled Text',
-    optionA: 'Off A',
-    optionB: 'Off B',
-    variant: 'primary',
+    id: "Disabled Text",
+    optionA: "Off A",
+    optionB: "Off B",
+    variant: "primary",
     disabled: true,
   },
 };

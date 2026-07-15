@@ -1,5 +1,5 @@
 // Button.tsx
-import React from 'react';
+import React from "react";
 import { ButtonProps } from "./Button.types";
 import styled from "styled-components";
 
@@ -29,10 +29,9 @@ const StyledButton = styled.button<StyledButtonProps>`
   }
 `;
 
-
-export function Button ({
+export function Button({
   label = "Button",
-  variant = 'primary',
+  variant = "primary",
   backgroundColor = "#2563eb",
   disabled = false,
   onClick,

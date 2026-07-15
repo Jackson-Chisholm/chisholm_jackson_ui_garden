@@ -1,5 +1,5 @@
 // Button.tsx
-import React from 'react';
+import React from "react";
 import { TableProps } from "./Table.types";
 import styled from "styled-components";
 
@@ -49,10 +49,9 @@ const StyledTd = styled.td`
   border: 1px solid #d1d5db;
 `;
 
-
-export function Table ({
+export function Table({
   title,
-  variant = 'primary',
+  variant = "primary",
   backgroundColor = "#2563eb",
   disabled = false,
 }: TableProps) {

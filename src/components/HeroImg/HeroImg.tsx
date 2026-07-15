@@ -1,5 +1,5 @@
 // Button.tsx
-import React from 'react';
+import React from "react";
 import { HeroImgProps } from "./HeroImg.types";
 import styled from "styled-components";
 
@@ -42,11 +42,10 @@ const HeroImage = styled.img`
   line-height: 1.5;
 `;
 
-
-export function HeroImg ({
+export function HeroImg({
   src,
   alt,
-  variant = 'primary',
+  variant = "primary",
   backgroundColor = "#2563eb",
   disabled = false,
 }: HeroImgProps) {

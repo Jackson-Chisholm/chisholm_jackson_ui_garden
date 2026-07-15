@@ -1,19 +1,19 @@
 // Button.stories.tsx
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
-import React from 'react';
-import { Card } from './Card'; // Import your actual Button component
+import type { Meta, StoryObj } from "@storybook/react-webpack5";
+import React from "react";
+import { Card } from "./Card"; // Import your actual Button component
 
 // Default export: metadata for Storybook
 const meta: Meta<typeof Card> = {
-  title: 'Components/Card', // Storybook sidebar category
+  title: "Components/Card", // Storybook sidebar category
   component: Card,
-  tags: ['autodocs'], // Enables auto-generated docs
+  tags: ["autodocs"], // Enables auto-generated docs
   argTypes: {
     variant: {
-      control: { type: 'select' },
-      options: ['primary', 'secondary', 'danger'],
+      control: { type: "select" },
+      options: ["primary", "secondary", "danger"],
     },
-    disabled: { control: 'boolean' },
+    disabled: { control: "boolean" },
   },
 };
 
@@ -25,8 +25,8 @@ type Story = StoryObj<typeof Card>;
 // Default button
 export const Primary: Story = {
   args: {
-    label: 'Primary Card',
-    variant: 'primary',
+    label: "Primary Card",
+    variant: "primary",
     disabled: false,
   },
 };
@@ -34,8 +34,8 @@ export const Primary: Story = {
 // Secondary button
 export const Secondary: Story = {
   args: {
-    label: 'Secondary Card',
-    variant: 'secondary',
+    label: "Secondary Card",
+    variant: "secondary",
     disabled: false,
   },
 };
@@ -43,8 +43,8 @@ export const Secondary: Story = {
 // Disabled button
 export const Disabled: Story = {
   args: {
-    label: 'Disabled Card',
-    variant: 'primary',
+    label: "Disabled Card",
+    variant: "primary",
     disabled: true,
   },
 };

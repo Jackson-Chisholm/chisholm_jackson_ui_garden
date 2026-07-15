@@ -1,5 +1,5 @@
 // Button.tsx
-import React from 'react';
+import React from "react";
 import { TableHeaderProps } from "./TableHeader.types";
 import styled from "styled-components";
 
@@ -30,10 +30,9 @@ const StyledTableHeader = styled.th<StyledTableHeaderProps>`
   }
 `;
 
-
-export function TableHeader ({
+export function TableHeader({
   content,
-  variant = 'primary',
+  variant = "primary",
   backgroundColor = "#2563eb",
   disabled = false,
 }: TableHeaderProps) {

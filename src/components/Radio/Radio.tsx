@@ -1,5 +1,5 @@
 // Button.tsx
-import React from 'react';
+import React from "react";
 import { RadioProps } from "./Radio.types";
 import styled from "styled-components";
 
@@ -30,10 +30,9 @@ const StyledRadio = styled.input<StyledRadioProps>`
   }
 `;
 
-
-export function Radio ({
+export function Radio({
   label,
-  variant = 'primary',
+  variant = "primary",
   backgroundColor = "#2563eb",
   disabled = false,
 }: RadioProps) {

@@ -4,13 +4,15 @@ import "@testing-library/jest-dom";
 import { Table } from "./Table";
 
 test("Checks if the button is fully active", () => {
-  render(<Table/>);
+  render(<Table />);
   expect(screen.getByText("Makoto Yuki")).toBeVisible();
 });
 
 test("Check if the button changes when disabled", () => {
-  render(<Table disabled/>);
+  render(<Table disabled />);
 
-  expect(screen.getByText("Makoto Yuki")).toHaveStyle("background-color: #cccccc");
+  expect(screen.getByText("Makoto Yuki")).toHaveStyle(
+    "background-color: #cccccc",
+  );
   expect(screen.getByText("Makoto Yuki")).toHaveStyle("cursor: not-allowed");
 });

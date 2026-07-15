@@ -9,8 +9,10 @@ test("Checks if the button is fully active", () => {
 });
 
 test("Check if the button changes when disabled", () => {
-  render(<Label htmlFor="null" label="Off Label" disabled/>);
+  render(<Label htmlFor="null" label="Off Label" disabled />);
 
-  expect(screen.getByText("Off Label")).toHaveStyle("background-color: #cccccc");
+  expect(screen.getByText("Off Label")).toHaveStyle(
+    "background-color: #cccccc",
+  );
   expect(screen.getByText("Off Label")).toHaveStyle("cursor: not-allowed");
 });

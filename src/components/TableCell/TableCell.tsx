@@ -1,5 +1,5 @@
 // Button.tsx
-import React from 'react';
+import React from "react";
 import { TableCellProps } from "./TableCell.types";
 import styled from "styled-components";
 
@@ -30,10 +30,9 @@ const StyledTableCell = styled.td<StyledTableCellProps>`
   }
 `;
 
-
-export function TableCell ({
+export function TableCell({
   content,
-  variant = 'primary',
+  variant = "primary",
   backgroundColor = "#2563eb",
   disabled = false,
 }: TableCellProps) {

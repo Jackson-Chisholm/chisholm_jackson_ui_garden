@@ -1,5 +1,5 @@
 // Button.tsx
-import React from 'react';
+import React from "react";
 import { LabelProps } from "./Label.types";
 import styled from "styled-components";
 
@@ -30,11 +30,10 @@ const StyledLabel = styled.label<StyledLabelProps>`
   }
 `;
 
-
-export function Label ({
+export function Label({
   htmlFor,
   label,
-  variant = 'primary',
+  variant = "primary",
   backgroundColor = "#2563eb",
   disabled = false,
 }: LabelProps) {

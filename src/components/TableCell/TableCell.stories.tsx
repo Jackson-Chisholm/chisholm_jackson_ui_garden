@@ -1,19 +1,19 @@
 // Button.stories.tsx
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
-import React from 'react';
-import { TableCell } from './TableCell'; // Import your actual Button component
+import type { Meta, StoryObj } from "@storybook/react-webpack5";
+import React from "react";
+import { TableCell } from "./TableCell"; // Import your actual Button component
 
 // Default export: metadata for Storybook
 const meta: Meta<typeof TableCell> = {
-  title: 'Components/TableCell', // Storybook sidebar category
+  title: "Components/TableCell", // Storybook sidebar category
   component: TableCell,
-  tags: ['autodocs'], // Enables auto-generated docs
+  tags: ["autodocs"], // Enables auto-generated docs
   argTypes: {
     variant: {
-      control: { type: 'select' },
-      options: ['primary', 'secondary', 'danger'],
+      control: { type: "select" },
+      options: ["primary", "secondary", "danger"],
     },
-    disabled: { control: 'boolean' },
+    disabled: { control: "boolean" },
   },
 };
 
@@ -25,8 +25,8 @@ type Story = StoryObj<typeof TableCell>;
 // Default button
 export const Primary: Story = {
   args: {
-    content: 'Primary Table Cell',
-    variant: 'primary',
+    content: "Primary Table Cell",
+    variant: "primary",
     disabled: false,
   },
 };
@@ -34,8 +34,8 @@ export const Primary: Story = {
 // Secondary button
 export const Secondary: Story = {
   args: {
-    content: 'Secondary Table Cell',
-    variant: 'secondary',
+    content: "Secondary Table Cell",
+    variant: "secondary",
     disabled: false,
   },
 };
@@ -43,8 +43,8 @@ export const Secondary: Story = {
 // Disabled button
 export const Disabled: Story = {
   args: {
-    content: 'Disabled Table Cell',
-    variant: 'primary',
+    content: "Disabled Table Cell",
+    variant: "primary",
     disabled: true,
   },
 };

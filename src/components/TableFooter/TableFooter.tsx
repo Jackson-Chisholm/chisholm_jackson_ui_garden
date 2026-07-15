@@ -1,5 +1,5 @@
 // Button.tsx
-import React from 'react';
+import React from "react";
 import { TableFooterProps } from "./TableFooter.types";
 import styled from "styled-components";
 
@@ -30,10 +30,9 @@ const StyledTableFooter = styled.td<StyledTableFooterProps>`
   }
 `;
 
-
-export function TableFooter ({
+export function TableFooter({
   content,
-  variant = 'primary',
+  variant = "primary",
   backgroundColor = "#2563eb",
   disabled = false,
 }: TableFooterProps) {

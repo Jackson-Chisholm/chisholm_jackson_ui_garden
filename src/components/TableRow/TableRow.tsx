@@ -1,5 +1,5 @@
 // Button.tsx
-import React from 'react';
+import React from "react";
 import { TableRowProps } from "./TableRow.types";
 import styled from "styled-components";
 
@@ -30,10 +30,9 @@ const StyledTableRow = styled.tr<StyledTableRowProps>`
   }
 `;
 
-
-export function TableRow ({
+export function TableRow({
   content,
-  variant = 'primary',
+  variant = "primary",
   backgroundColor = "#2563eb",
   disabled = false,
 }: TableRowProps) {

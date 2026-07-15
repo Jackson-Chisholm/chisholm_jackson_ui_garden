@@ -70,4 +70,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 ### How to set up
+
 First start with creating the create react app via "npm create-react-app" with the app name. Following that up would be initializing Storyboook with "npx sb init". Once both are downloaded, create the docker image. Set up the port to be using 8083:80 when creating a container with the image. Once that is done, you then have this storybook file running on localhost 8083.

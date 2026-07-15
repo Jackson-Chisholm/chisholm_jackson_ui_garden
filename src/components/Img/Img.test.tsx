@@ -9,7 +9,7 @@ test("Checks if the button is fully active", () => {
 });
 
 test("Check if the button changes when disabled", () => {
-  render(<Img src="off.png" alt="dos" disabled/>);
+  render(<Img src="off.png" alt="dos" disabled />);
 
   expect(screen.getByAltText("dos")).toHaveStyle("background-color: #cccccc");
   expect(screen.getByAltText("dos")).toHaveStyle("cursor: not-allowed");

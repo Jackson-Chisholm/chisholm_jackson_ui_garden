@@ -1,5 +1,5 @@
 // Button.tsx
-import React from 'react';
+import React from "react";
 import { ImgProps } from "./Img.types";
 import styled from "styled-components";
 
@@ -30,11 +30,10 @@ const StyledImg = styled.img<StyledImgProps>`
   }
 `;
 
-
-export function Img ({
+export function Img({
   src,
   alt,
-  variant = 'primary',
+  variant = "primary",
   backgroundColor = "#2563eb",
   disabled = false,
 }: ImgProps) {
@@ -45,7 +44,6 @@ export function Img ({
       className={`btn btn-${variant}`}
       $disabled={disabled}
       $backgroundColor={backgroundColor}
-    >
-    </StyledImg>
+    ></StyledImg>
   );
 }
