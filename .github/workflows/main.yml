@@ -1,0 +1,19 @@
+name: "Quality Check"
+
+on:
+  push:
+  pull_request:
+  
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Runs Prettier Check
+        run: npx prettier -c .
+
+      - name: Runs tslint Check
+        run: npx eslint src/
+      - name: Run Test
+        run: npm test
