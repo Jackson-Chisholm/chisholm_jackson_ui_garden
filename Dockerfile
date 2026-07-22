@@ -1,5 +1,5 @@
 FROM node:20-alpine
-WORKDIR /chisholm_jackson_ui_garden
+WORKDIR /chisholm_jackson_ui_garden_build_checks
 COPY package*.json ./
 COPY package-lock.json ./
 RUN npm install

@@ -71,4 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### How to set up
 
-First start with creating the create react app via "npm create-react-app" with the app name. Following that up would be initializing Storyboook with "npx sb init". Once both are downloaded, create the docker image. Set up the port to be using 8083:80 when creating a container with the image. Once that is done, you then have this storybook file running on localhost 8083.
+First start with creating the create react app via "npm create-react-app" with the app name. Following that up would be initializing Storyboook with "npx sb init". Once both are downloaded, create the docker image. Build the image first using "Docker build -t folder_name .", and then access docker desktop. Once in there, press the run button to bring up image creation settings. Set the host name to whatever is needed as the name, and then set port to "8081". Due to port 6006 already being open, storybook will run, and you have localhost:8081.
